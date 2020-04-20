@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="greeting"
+            type="String" />
+
+        <variable
+            name="time"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{greeting}"
+            tools:text="Hello, Jonathan!"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{time}"
+            tools:text="Login at 20 April 2020 20:12:32"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</layout>
